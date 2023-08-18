@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "reazon-396307",
+  "private_key_id": "93d242895e5efcc9a25e523eaff01c86519b72b0",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC/mggo+0sFH/ST\njyrxoAmdT77oHARZ2MSsgOqhVCZRmOWVOWoQckRY4Tg2mJ/wUrJ8YbIg/mhPZllf\nqH/8oKMRbax1dF2auWSY4urHdFwNJL/ZXwD5ycTW6JoUj/JWj+JkmFHpMehYZcXR\nOL54Le4uQ6th9THx4rCOdZ8fRhYPaLJoy7w48YbePB5xeqP14AOEIdAJ7OzXLTBi\niRUM+ZTsMSub1hCMWH/t66u3zyP/OzpZRVPBZoNCzTHlNNCaYZBc29GApY/onIEC\n91gW8kTAH37YohHOAofbEMrsGjQ6uxS24SGI9B/znQzqwOppkfUnOkaJG9KCeifH\nHOVNEpdHAgMBAAECggEABfCLA9o34jzJi3aWi6waCO1Pk+vqbG6bfpNTbOZYvKm8\nAsybwSA4QF7scbwbsHOIkU7mA3lIQFmCFTkRdesMLrXEZWzSygdLz2o8U4kbLQ6W\nOcLZSZ87oc9arrZR13DCEtLNRcuQF/v7VBf69WsoixARmpVAZUv0RqqoPfeV4PC3\n0K1iJWsen9kLaAYvEiVI3RM97Eh/dQPWFv6EolrOLAINFUwRn8wJN93H+vfg7z5b\n0RNp1gv41RrGXcDiisruLSP/EFVVB8ix1VNWcQ5B4vMCRY1GQeHgWRJKzDmHz5dW\nY+JyFGYvKrkWGjkLIqJi1xdMsJTxNoTqN434f0jOQQKBgQDtPok4Ofl8LFz76mZC\nFcwrsYcxDOIwJoUnzXNSgnMm821EXedzBBgS8qNguWKRYWLU6jh9NBFe7l+I3VJk\nYdKJ5jKpwyat0L46Vtv2cdOTdXedCmt2hpYBjjQKZ8dx05qogGMwB0FVpL7g7+VI\nDDHjzUKBiZ05Q9I1sOphfbzr+QKBgQDOv8JR+SxozZbJUVCc8ULjZJNHTT5o4HHZ\nTitvIRIdwHgpZb4W+U+lz73L4nIJobzLCyqfBEjGK49b/EtoC8omNVJYXDbdUyBI\ness5gJq5khGqYi34cm7DgwKphL14oLFsrW3AEwIdW7YocndA2mlSL1BqDxjVeaJO\n/2abP9ftPwKBgQDYuPPpJSy/PleC2VGotPjaQUZajIZjrgydm5TpnrlKr7z1Y0L3\nUpobVQPia/ebDveVwJDx7wqfSeqDwIpvoN0Pk/ZcFiXTSok8CfTOYJUCc6BdGROq\nJrAJo7nud3c+iCsUGpSBX19TuTeVjBBLjLhWfT9vziKOGWKCIac6f/6BIQKBgDGM\n/eqdmIops9jeFz72B7zuDupI1gtWt5KITJqex3O//EyXqN5itDceOfPSethaHiBf\ntcBUy4hLSlmWdxAhuzo7D1hECZYz5QnZ/Dj03KBbJMa8Lx5bdrZ/ALVWLf7qLHvK\neQJOy/PzVg4NmQ0/C3z6AADbS21mcIMUbSgKPhsLAoGAE385niBGIsr9bHyTptoj\ntbjCdWFOn2G6Kwvr0NCeMPhoib7RsXedZk4DKue2wrGbR2suAqGVwFTXoB8PyfFO\naRjrek6QmP7VDbznh32EY1zKaufuo7+R1uEmFlX1DFjluFEAg36R8xXzCSEeFFkS\nyeJz6DqM2TAgxKy9rDoPx/8=\n-----END PRIVATE KEY-----\n",
+  "client_email": "takasugi@reazon-396307.iam.gserviceaccount.com",
+  "client_id": "108317516594756260431",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/takasugi%40reazon-396307.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

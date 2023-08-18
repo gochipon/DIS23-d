@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Upload</title>
+</head>
+<body>
+    <h1>{{ message }}</h1> <!-- Pythonから送られてきたメッセージを表示 -->
+
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <input type="text"  id="add" name="add" placeholder="返信">
+        <p></p>
+        <button type="submit">送信</button>
+    </form>
+</body>
+</html>

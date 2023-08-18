@@ -7,7 +7,7 @@
   </head>
   <body>
         <h1>Task Form</h1>
-        <p>フォームに回答してください</p>
+        <p>{{ message }}</p>
         <form action="/" method="POST" enctype="multipart/form-data">
             <div>
                 <label for="name">目標：</label>
@@ -28,10 +28,6 @@
                 <label for="last_time">取り組み可能修了時間：</label>
                 <input type="text" id="last_time" name="last_time" required placeholder="(例)22:00">	
                 ※入力必須
-            </div>
-            <div>
-                <label for="max_time">1日の最大取り組み時間：</label>
-                <input type="text" id="max_time" name="max_time" placeholder="(例)2時間，30分">	
             </div>
             <div>
                 <label for="req">その他要望：</label>
