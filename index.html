@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Task form</title>
+  </head>
+  <body>
+        <h1>Task Form</h1>
+        <p>フォームに回答してください</p>
+        <form action="/" method="POST" enctype="multipart/form-data">
+            <div>
+                <label for="name">目標：</label>
+                <input type="text" id="name" name="name" style="width: 300px;" required placeholder="(例)TOEIC900点，コンピュータサイエンスの勉強">	
+                ※入力必須
+            </div>
+            <div>
+                <label for="limit">達成期限：</label>
+                <input type="text" id="limit" name="limit" required placeholder="(例)来年の3月">	
+                ※入力必須
+            </div>
+            <div>
+                <label for="first_time">取り組み可能開始時間：</label>
+                <input type="text" id="first_time" name="first_time" required placeholder="(例)9:00">	
+                ※入力必須
+            </div>
+            <div>
+                <label for="last_time">取り組み可能修了時間：</label>
+                <input type="text" id="last_time" name="last_time" required placeholder="(例)22:00">	
+                ※入力必須
+            </div>
+            <div>
+                <label for="max_time">1日の最大取り組み時間：</label>
+                <input type="text" id="max_time" name="max_time" placeholder="(例)2時間，30分">	
+            </div>
+            <div>
+                <label for="req">その他要望：</label>
+                <input type="text" id="req" name="req" style="width: 300px;" placeholder="(例)リスニング重視">	
+            </div>
+            <div>
+                <input type="submit" value="送信">
+            </div>
+        </form>
+    </body>
+</html>
