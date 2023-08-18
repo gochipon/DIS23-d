@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 8px;
+        }
+
+        /* フッターセクション */
+        .footer {
+            background-color: #f7f7f7;
+            border-top: 1px solid #eaeaea;
+            padding: 10px 20px;
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        /* テキストボックス */
+        .footer input[type="text"] {
+            width: 80%; /* ボックスの幅を80%に設定 */
+            padding: 10px;
+            border: 1px solid #eaeaea;
+            box-sizing: border-box;
+        }
+
+        /* ボタン */
+        .footer button {
+            display: block;
+            width: auto;
+            margin: 0 auto; /* 画面の中央に位置 */
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<h1>直近1週間</h1>
+<table>
+    <thead>
+        <tr>
+            <th>日付</th>
+            <th>予定</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for date, tasks in schedule.items() %}
+        <tr>
+            <td>{{ date }}</td>
+            <td>
+                <ul>
+                    {% for task in tasks %}
+                    <li>{{ task.start_time }} - {{ task.end_time }} : {{ task.task }}</li>
+                    {% endfor %}
+                </ul>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<div class="footer">
+    <button>Googleカレンダーに書き込む</button>
+    <p></p>
+    <input type="text" placeholder="変更したいこと">
+    <p></p>
+    <button>スケジュールを更新</button>
+</div>
+</body>
+</html>
