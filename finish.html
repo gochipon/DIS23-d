@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>書き込み完了</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Google カレンダーに書き込みました！</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>日付</th>
+                <th>予定</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for date, tasks in schedule.items() %}
+            <tr>
+                <td>{{ date }}</td>
+                <td>
+                    <ul>
+                        {% for task in tasks %}
+                        <li>{{ task.start_time }} - {{ task.end_time }} : {{ task.task }}</li>
+                        {% endfor %}
+                    </ul>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <form action="/back" method="POST">
+        <p></p>
+        <button type="submit">戻る</button>
+    </form>
+</body>
+</html>

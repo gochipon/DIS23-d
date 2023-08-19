@@ -25,7 +25,18 @@ def get_calen():
      
      # Generate output text
      response = ''
-
+     '''
+     for event in formatted_events:
+          if re.match(r'^\d{4}-\d{2}-\d{2}$', event[0]):
+               start_date = '{0:%Y-%m-%d}'.format(datetime.datetime.strptime(event[0], '%Y-%m-%d'))
+               end_date = '{0:%Y-%m-%d}'.format(datetime.datetime.strptime(event[1], '%Y-%m-%d'))
+               response += '{0} ~ {1}、'.format(start_date, end_date)
+          else:
+               start_time = '{0:%Y-%m-%d %H:%M}'.format(datetime.datetime.strptime(event[0], '%Y-%m-%dT%H:%M:%S+09:00'))
+               end_time = '{0:%Y-%m-%d %H:%M}'.format(datetime.datetime.strptime(event[1], '%Y-%m-%dT%H:%M:%S+09:00')) # この行が問題でした
+               response += '{0} ~ {1}、'.format(start_time, end_time)
+     
+     '''
      for event in formatted_events:
           if re.match(r'^\d{4}-\d{2}-\d{2}$', event[0]):
                start_date = '{0:%Y-%m-%d}'.format(datetime.datetime.strptime(event[1], '%Y-%m-%d'))
@@ -35,5 +46,6 @@ def get_calen():
                start_time = '{0:%Y-%m-%d %H:%M}'.format(datetime.datetime.strptime(event[0], '%Y-%m-%dT%H:%M:%S+09:00'))
                end_time = '{0:%H:%M}'.format(datetime.datetime.strptime(event[1], '%Y-%m-%dT%H:%M:%S+09:00'))
                response += '{0} ~ {1}、'.format(start_time, end_time)
+     
      response = response.rstrip(',')
      return response
